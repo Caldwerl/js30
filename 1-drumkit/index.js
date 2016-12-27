@@ -4,7 +4,7 @@ var key;
 var audio;
 var keys = Array.from(document.querySelectorAll('.key'));
 
-function removeTransition(e) {
+function removeTransition (e) {
 
     if (e.propertyName !== 'transform') {
         return;
@@ -12,7 +12,7 @@ function removeTransition(e) {
     e.target.classList.remove('playing');
 }
 
-function playSound(e) {
+function playSound (e) {
 
     audio = document.querySelector('audio[data-key="' + e.keyCode + '"]');
     key = document.querySelector('div[data-key="' + e.keyCode + '"]');
